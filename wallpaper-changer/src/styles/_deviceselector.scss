@@ -1,0 +1,73 @@
+@import "variables";
+
+.device-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-family: "TKT", sans-serif;
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: $text-main;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 350px;
+    background-color: $card-bg;
+    border: 1px solid $border-shadow;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .selected {
+      padding: 0.75rem 1rem;
+      color: $text-main;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .arrow {
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+      transform: rotate(180deg);
+    }
+
+    .options {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      border-top: 1px solid $border-shadow;
+      background-color: $card-bg;
+      border-radius: 0 0 8px 8px;
+
+      li {
+        padding: 0.75rem 0.5rem;
+        color: $text-main;
+        transition: background 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $accent;
+          color: $card-bg;
+        }
+      }
+    }
+
+    &.open {
+      .options {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
