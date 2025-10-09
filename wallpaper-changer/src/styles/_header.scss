@@ -1,0 +1,30 @@
+@import "variables";
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $background;
+  
+
+  p {
+    text-transform: capitalize;
+  }
+
+  span {
+    color: $accent;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 450px) {
+    p {
+        text-align: center;
+    }
+  }
+}

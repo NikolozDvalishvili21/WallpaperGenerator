@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles/main.scss'
+import Header from './components/Header';
 
 function App() {
   return (
     <div>
-      <h1>Wallpaper Changer</h1>
+      <Header />
     </div>
   );
 }

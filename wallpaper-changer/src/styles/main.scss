@@ -4,3 +4,12 @@
 @import "searchbar";
 @import "wallpapers";
 @import "footer";
+
+@font-face {
+  font-family: "TKT";
+  src: url("../assets/fonts/TKT-REGULAR.TTF") format("truetype");
+}
+
+body {
+  font-family: "TKT";
+}
