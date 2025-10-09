@@ -1,0 +1,52 @@
+@import "variables";
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "TKT", sans-serif;
+
+  input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid $border-shadow;
+    border-radius: 50px 0 0 50px;
+    background-color: $card-bg;
+    color: $text-main;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $accent;
+      box-shadow: 0 0 5px $accent;
+    }
+
+    &::placeholder {
+      color: lighten($text-main, 30%);
+    }
+  }
+
+  button {
+    padding: 0.75rem 1.25rem;
+    border: 2px solid $border-shadow;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    background-color: $accent;
+    color: $card-bg;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
