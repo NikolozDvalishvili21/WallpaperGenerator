@@ -1,6 +1,6 @@
 🖼️ Wallpaper Generator
 
-A simple and creative web app that allows users to generate beautiful wallpapers instantly using React and SCSS.
+A simple and creative web app that allows users to generate and download beautiful wallpapers instantly using UnsplashAPI, React and SCSS.
 Built for fun, design inspiration, and quick background creation.
 
 🚀 Features:
